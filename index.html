@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escadron</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
-    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script> -->
     <style>
         .skiptranslate {
             display: none !important;
@@ -36,10 +36,10 @@
                 </div>
                 <div class="wrapper-sl-lang">
                     <div class="language">
-                        <div data-google-lang="ru" class="language__img" ><img src="flags/ru.png" alt="ru" data-google-lang="ru" class="language__img">русский</div>
-                        <img src="flags/ua.png" alt="uk" data-google-lang="uk" class="language__img">
-                        <img src="flags/gb.png" alt="en" data-google-lang="en" class="language__img">
-                        <img src="flags/de.png" alt="de" data-google-lang="de" class="language__img">
+                        <div data-google-lang="ru" class="language__img"><img src="flags/ru.png" alt="ru">русский</div>
+                        <div data-google-lang="uk" class="language__img"><img src="flags/ua.png" alt="uk">украинский</div>
+                        <div data-google-lang="en" class="language__img"><img src="flags/gb.png" alt="en">английский</div>
+                        <div data-google-lang="de" class="language__img"><img src="flags/de.png" alt="de">немецкий</div>
                     </div>
                 </div>
             </div>
@@ -57,8 +57,90 @@
         </div>
     </header>
     <section class="intro">
-        <h3 class="intro-title1" style="color: #000;">Конно-спортивный клуб</h2>
-        <h2 class="intro-title2" style="color:#C69C6D">«Эскадрон»</h2>
+        <h3 class="intro-title1">Конно-спортивный клуб</h2>
+        <h2 class="intro-title2">«Эскадрон»</h2>
+        <div class="wrapper-sl">
+            <div class="slider">
+                <div class="slider_item">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                    <img src="img/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="wrapper-sl-desc">
+                <p class="desc"><br>Лошади приходят к нам в детстве.Они приходят из сказок,песен и стихов,мультфильмови фильмов.С самой зари человечества-Лошадь верный наш друг и постоянный спутник.
+                    В 2007 году мы основали КСК «Эскадрон»,где любовью к лошади и заботой о ней пронизан каждый уголок нашего уютного клуба,где любой человек может присоедениться к этому элитному и поистине аристократическому занятию.<br><br></p>
+            </div>
+        </div>
+        <div class="wrapper-b">
+            <button class="wrapper-buttons">О нас</button>
+            <button class="wrapper-buttons">Услуги</button>
+        </div>
     </section>
+    <footer class="footer" id="footerukrzem">
+        <div class="container">
+            <div class="footer-container about-us">
+                <h3 class="footer-container-title">Контакти</h3>
+                <p class="footer-container-desc"><img src="https://ukrzem.org/img/adress.png" width="20" height="20" alt=""><span>вул.Грецька 31, Кокон, 4 поверх</span></p>
+                <p class="footer-container-desc"><img src="https://ukrzem.org/img/f-phone.png" width="20" height="20" alt=""><a href="tel:0800334258" onclick="ga('send', 'event', 'telefon', 'click');  rta('send','goal','Click_Telefon'); return true;"><span>0800334258</span></a></p>
+                <p class="footer-container-desc"><img src="https://ukrzem.org/img/mail.png" width="20" height="20" alt=""><a href="mailto:ukrzem.org@gmail.com"><span>ukrzem.org@gmail.com</span></a></p>
+                <p class="footer-container-desc"><img src="https://ukrzem.org/img/time.png" width="20" height="20" alt=""><span>Пн-Пт: 10:00-18:00 Сб.Вс.: Вихідні</span></p>
+            </div>
+            <div class="footer-container quick-links" id="contacts">
+                <div class="clear-fix">
+                    <div class="column">
+                        <h3 class="footer-container-title">Меню</h3>
+                        <a href="#" class="footer-quick-links">
+                            <p class="footer-container-desc">Головна</p>
+                        </a>
+                        <a href="#" class="footer-quick-links">
+                            <p class="footer-container-desc">Послуги</p>
+                        </a>
+                        <a href="#" class="footer-quick-links">
+                            <p class="footer-container-desc">Про компанію</p>
+                        </a>
+                        <a href="#" class="footer-quick-links">
+                            <p class="footer-container-desc">Новини</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container find-us">
+                <h3 class="footer-container-title">Знайдіть нас у</h3>
+                <div class="display-flex">
+                    <a href="#" class="f-img-container"></a>
+                    <a href="#" class="f-img-container"></a>
+                    <a href="#" class="f-img-container"></a>
+                </div>
+                <div href="#" class="footer-logo"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- Подключаем jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+     <!-- Покдлючаем слайдер Slick -->
+     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        // SLider Слайдер
+$(document).ready(function() {
+    $('.slider').slick({
+        arrows: true,
+        dots: true,
+        adaptiveHeight: false,
+        slidesToShow: 1, // кол-во показывать
+        slidesToScroll: 1, //количество перелистываемых слайдеров
+        speed: 1000,
+        infinite: true, //бесконечый слаайдер
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true
+    });
+});
+    </script>
 </body>
 </html>
