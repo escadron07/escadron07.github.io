@@ -1,3 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-top .wrapper-l {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-top .wrapper-l .logo-desc {
+  padding-left: 20px;
+  margin-top: 10px;
+  position: relative;
+  border-left: 10px solid #754C24;
+}
+
+.header-top .wrapper-l .logo-desc h1 {
+  margin-bottom: 5px;
+  margin-top: -5px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.header-top .wrapper-l .logo-desc p {
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.header-bottom {
+  background-color: #000;
+  box-shadow: 6px 6px 8px rgb(0 0 0 / 50%);
+}
+
+.header-bottom .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-bottom .container .main-links {
+  color: #fff;
+  font-family: cursive;
+  font-weight: 700;
+  color: #fff;
+  font-family: cursive;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.header-bottom .container .main-links:hover {
+  color: #C69C4A;
+}
+
+.header-bottom .container .main-links.active {
+  color: #C69C4A;
 }

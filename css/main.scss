@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding-top: 20px;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        .wrapper-l {
+            display: flex;
+            align-items: flex-start;
+            .logo-desc {
+                padding-left: 20px;
+                margin-top: 10px;
+                position: relative;
+                h1 {
+                    margin-bottom: 5px;
+                    margin-top: -5px;
+                    font-weight: 800;
+                    line-height: 32px;
+                }
+                p {
+                    margin-top: 0px;
+                    margin-bottom: 0;
+                    font-size: 12px;
+                    line-height: 19px;
+                    font-weight: bold;
+                }
+                border-left: 10px solid #754C24;
+            }
+        }
+    }
+    &-bottom {
+        background-color: #000;
+        box-shadow: 6px 6px 8px rgb(0 0 0 / 50%);
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .main-links {
+                color:#fff;
+                font-family: cursive;
+                font-weight: 700;
+                color: #fff;
+                font-family: cursive;
+                font-weight: 700;
+                padding: 15px 0;
+                font-size: 23px;
+                text-decoration: none;
+                &:hover {
+                    color:#C69C4A;
+                }
+                &.active {
+                    color:#C69C4A;
+                }
+            }
+        }
+    }
 }
