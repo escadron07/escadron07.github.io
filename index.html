@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escadron</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/lang.js"></script>
-    <style type="text/css">
-        body { top: 0px !important; } /* Убираем отступ который выставляет скрипт */
-        .skiptranslate { display: none !important; } /* Скрываем гугловский навбар с выбором языка  */
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/google-translate.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 </head>
 <body>
     <div id="google_translate_element"></div>
@@ -25,30 +24,13 @@
                     <a href="#" class="social-but"></a>
                 </div>
                 <div class="wrapper-sl-lang">
-                    <ul class="translate">
-
-                        <li class="">
-                                 <a href="#" onclick="doGTranslate('ru|en');"> <!-- Переводим сайт с русского на английский -->
-                                 <img height="20" width="30"
-                                       alt="Флаг страны 1"
-                                      src="flags/gb-eng.png">
-                                 <span>
-                                       английский
-                                 </span>
-                             </a>
-                         </li>
-                         <li class="">
-                            <a href="#" onclick="doGTranslate('ru|ua');"> <!-- Переводим сайт с русского на английский -->
-                            <img height="20" width="30"
-                                  alt="Флаг страны 1"
-                                 src="flags/ua.png">
-                            <span>
-                                  Украинский
-                            </span>
-                        </a>
-                    </li>
-                   
-                   </ul>
+                    <div class="language">
+                        <img src="flags/ru.png" alt="ru" data-google-lang="ru" class="language__img">
+                        <img src="flags/en.png" alt="en" data-google-lang="en" class="language__img">
+                        <img src="flags/de.png" alt="de" data-google-lang="de" class="language__img">
+                        <img src="flags/fr.png" alt="fr" data-google-lang="fr" class="language__img">
+                        <img src="flags/pt.png" alt="pt" data-google-lang="pt" class="language__img">
+                    </div>
                 </div>
             </div>
         </div>
